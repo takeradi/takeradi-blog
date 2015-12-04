@@ -69,3 +69,12 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type:
+
+
+
+# rss
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
