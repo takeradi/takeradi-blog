@@ -1,8 +1,10 @@
 title: Git Submodules
 date: 2015-12-04 08:26:41
-tags:
+tags: ['Git']
+categories: ['Version Control']
 ---
-
+This post aims to ease the pain that one might feel while trying to understand [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). It is an advanced Git topic but it really isn't that difficult to understand.
+<!--more-->
 # Initialize your Git Repository
 
 ```
@@ -107,3 +109,38 @@ If you notice carefully, a new file named `.gitmodules` has been created. This g
 ```
 
 # Stage, Commit, and Push the main project to master
+```
+✝  ~/takeradi/blog   master±  git add .
+ ✝  ~/takeradi/blog   master±  git commit -m "Initial commit of the blog"
+[master (root-commit) c17cc19] Initial commit of the blog
+ 10 files changed, 257 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .gitmodules
+ create mode 100644 _config.yml
+ create mode 100644 package.json
+ create mode 100644 scaffolds/draft.md
+ create mode 100644 scaffolds/page.md
+ create mode 100644 scaffolds/post.md
+ create mode 100644 source/_posts/Git-Submodules.md
+ create mode 100644 source/_posts/hello-world.md
+ create mode 160000 themes/next
+ ✝  ~/takeradi/blog   master  git remote add origin https://github.com/takeradi/takeradi-blog.git
+ ✝  ~/takeradi/blog   master  git push -u origin master
+Username for 'https://github.com': takeradi
+Password for 'https://takeradi@github.com':
+Counting objects: 15, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (15/15), 3.77 KiB | 0 bytes/s, done.
+Total 15 (delta 0), reused 0 (delta 0)
+To https://github.com/takeradi/takeradi-blog.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
+
+# Closing Thoughts
+Thats it! It sucks that you have to jump through hoops to do this but IMHO, this is the best way (atleast that I know of). Forking enables you to sync and consume the upstream changes at a later stage of your development. Forking also enables you to customize and keep those changes on your repo for use into other projects.
+
+BTW, if you look at the GitHub repository you will see the shaw of the latest commit linking to the latest commit of the forked repo.
+
+Also, I have heard that there is a better way to this but its currently in the works. Its called [git-subtree](https://github.com/apenwarr/git-subtree) and it has been merged to the main [Git](https://github.com/git/git/tree/master/contrib/subtree) repo. As soon as I get a hang of git-subtree, I will post an alternative way complete this whole process. Let me know what you guys think!
