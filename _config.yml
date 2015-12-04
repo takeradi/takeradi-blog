@@ -78,3 +78,9 @@ feed:
   path: atom.xml
   limit: false
   hub:
+
+
+
+#sitemap
+sitemap:
+    path: sitemap.xml
