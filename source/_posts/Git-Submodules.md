@@ -8,22 +8,21 @@ This post aims to ease the pain that one might feel while trying to understand [
 I will try to demonstrate Git Submodules through an example. Imagine that you have to create a project and use a third party library inside that project. You also want to customize the 3rd party library according to your needs. How do you approach this problem? Using Git Submodules! Let's look at the example:
 
 <!--more-->
-# Initialize your Git Repository:
-
+<hr/>
+# Initialize your Git Repository:<p/>
 ```
 ✝  ~/takeradi/blog  git init
 Initialized empty Git repository in /Users/adityab/takeradi/blog/.git/
 ```
+<p/>
+<hr/>
+# Fork the 3rd party repo to your GitHub account:<p/>
+
+The reason why I chose to fork the 3rd party repo to my own Github account is because I didn't have permission to push to the 3rd party vendor's repo. Who in their right state of mind would give me or you the permission to do that! And I wanted to customize the library according to my needs. Many stackoverflow users have faced this [issue](http://stackoverflow.com/questions/12309884/make-changes-to-a-git-submodule-and-then-add-those-into-my-main-project) and I have found this to be the best way to customize the library to my needs. If in the future, I want to sync the updates from the 3rd party vendor into my fork, I will just have to perform these [steps](https://help.github.com/articles/syncing-a-fork/) mentioned on GitHub.
 
 
-# Fork the 3rd party repo to your GitHub account:
-
-The reason why I chose to fork the 3rd party repo to my own Github account is because I didn't have permission to push to the 3rd party vendor's repo. Who in their right state of mind would give me or you the permission to do that! And I wanted to customize the library according to my needs. Many Stackoverflow users have faced this [issue](http://stackoverflow.com/questions/12309884/make-changes-to-a-git-submodule-and-then-add-those-into-my-main-project) and I have found this to be the best way to customize the library to my needs. If in the future, I want to sync the updates from the 3rd party vendor into my fork, I will just have to perform these [steps](https://help.github.com/articles/syncing-a-fork/) mentioned on GitHub
-
-
-
-# Add the forked module as a submodule into my main project:
-
+<hr/>
+# Add the forked module as a submodule into my main project:<p/>
 ```
 ✝  ~/takeradi/blog   master±  git submodule add https://github.com/takeradi/hexo-theme-next.git themes/next
 Cloning into 'themes/next'...
@@ -33,12 +32,13 @@ Receiving objects: 100% (4802/4802), 9.69 MiB | 1.77 MiB/s, done.
 Resolving deltas: 100% (2496/2496), done.
 Checking connectivity... done.
 ```
+<p/>
 
-
-
-# Customize the submodule:
+<hr/>
+# Customize the submodule:<p/>
 
 ## _- Make the changes and check git status:_
+
 
 ```
 ✝  ~/takeradi/blog/themes/next   master±  git status
@@ -58,6 +58,7 @@ Changes not staged for commit:
 ```
 
 ## _- Stage, Commit, and Push the submodule to its master:_
+
 
 ```
 ✝  ~/takeradi/blog/themes/next   master±  git add .
@@ -82,10 +83,11 @@ Total 3 (delta 1), reused 0 (delta 0)
 To https://github.com/takeradi/hexo-theme-next.git
   0881139..32ca4fa  master -> master
 ```
+<p/>
 
+<hr/>
+# Check the status of the main project:<p/>
 
-
-# Check the status of the main project:
 
 ```
 ✝  ~/takeradi/blog   master±  git status
@@ -127,9 +129,8 @@ If you notice carefully, you will see two things:
 2. The `new commits` message which indicates that a submodule has been created and needs to be committed.
 
 
-
-# Stage, Commit, and Push the main project to master:
-
+<hr/>
+# Stage, Commit, and Push the main project to master:<p/>
 ```
 ✝  ~/takeradi/blog   master±  git add .
  ✝  ~/takeradi/blog   master±  git commit -m "Initial commit of the blog"
@@ -168,9 +169,8 @@ The above screenshot shows `32ca4fa` as the hash of the commit which is referenc
 In fact, if you dig deeper, you will notice that the commit that was pushed from the main project was in fact the complete hash of the commit in the forked repo as shown below:
 
 ![Complete hash of the forked repo](/images/04122015/Git_Hash_Link.png)
-
-# Customizing the library further:
-
+<hr/>
+# Customizing the library further:<p/>
 If you want to continue customizing the 3rd party library, you just have to follow the same steps again:
 1. Stage, commit and push changes in the library
 2. Change directory to the main project and check git status. You will see something like this:
@@ -196,8 +196,9 @@ If you want to continue customizing the 3rd party library, you just have to foll
 3. Stage, commit and push these changes in the main project.
 
 Simple!
+<hr/>
+# Closing Thoughts:<p/>
 
-# Closing Thoughts:
 
 Thats it! It sucks that you have to jump through so many hoops to do this but IMHO, this is the best way (atleast that I know of). Forking enables you to sync and consume the upstream changes at a later stage of your development. Forking also enables you to customize and keep those changes on your repo for use into other projects.
 
