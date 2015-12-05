@@ -1,4 +1,4 @@
-title: Atom Packages
+title: Must Have Atom Packages
 date: 2015-12-04 20:30:44
 tags: ['Atom']
 categories: ['Text Editors']
