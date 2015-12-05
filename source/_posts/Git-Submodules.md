@@ -11,7 +11,7 @@ I will try to demonstrate Git Submodules through an example. Imagine that you ha
 <hr/>
 # Initialize your Git Repository:<p/>
 ```
-✝  ~/takeradi/blog  git init
+✝  ~/takeradi/blog > git init
 Initialized empty Git repository in /Users/adityab/takeradi/blog/.git/
 ```
 <p/>
@@ -24,7 +24,7 @@ The reason why I chose to fork the 3rd party repo to my own Github account is be
 <hr/>
 # Add the forked module as a submodule into my main project:<p/>
 ```
-✝  ~/takeradi/blog   master±  git submodule add https://github.com/takeradi/hexo-theme-next.git themes/next
+✝  ~/takeradi/blog -- master± > git submodule add https://github.com/takeradi/hexo-theme-next.git themes/next
 Cloning into 'themes/next'...
 remote: Counting objects: 4802, done.
 remote: Total 4802 (delta 3), reused 3 (delta 3), pack-reused 4798
@@ -41,7 +41,7 @@ Checking connectivity... done.
 
 
 ```
-✝  ~/takeradi/blog/themes/next   master±  git status
+✝  ~/takeradi/blog/themes/next -- master± > git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
@@ -61,8 +61,8 @@ Changes not staged for commit:
 
 
 ```
-✝  ~/takeradi/blog/themes/next   master±  git add .
-✝  ~/takeradi/blog/themes/next   master±  git commit -m "Removed language support"
+✝  ~/takeradi/blog/themes/next -- master± > git add .
+✝  ~/takeradi/blog/themes/next -- master± > git commit -m "Removed language support"
 [master 32ca4fa] Removed language support
 7 files changed, 493 deletions(-)
 delete mode 100644 languages/de.yml
@@ -72,7 +72,7 @@ delete mode 100644 languages/ru.yml
 delete mode 100644 languages/zh-Hans.yml
 delete mode 100644 languages/zh-hk.yml
 delete mode 100644 languages/zh-tw.yml
-✝  ~/takeradi/blog/themes/next   master  git push origin master
+✝  ~/takeradi/blog/themes/next -- master > git push origin master
 Username for 'https://github.com': takeradi
 Password for 'https://takeradi@github.com':
 Counting objects: 3, done.
@@ -90,7 +90,7 @@ To https://github.com/takeradi/hexo-theme-next.git
 
 
 ```
-✝  ~/takeradi/blog   master±  git status
+✝  ~/takeradi/blog -- master± > git status
 On branch master
 
 Initial commit
@@ -121,7 +121,7 @@ If you notice carefully, you will see two things:
 1. a new file named `.gitmodules` has been created. This gets created when you add a submodule to your main project. If you view that file, you will see the references to the submodule:
 
     ```
-    ✝  ~/takeradi/blog   master±  cat .gitmodules
+    ✝  ~/takeradi/blog -- master± > cat .gitmodules
     [submodule "themes/next"]
        path = themes/next
        url = https://github.com/takeradi/hexo-theme-next.git
@@ -132,8 +132,8 @@ If you notice carefully, you will see two things:
 <hr/>
 # Stage, Commit, and Push the main project to master:<p/>
 ```
-✝  ~/takeradi/blog   master±  git add .
- ✝  ~/takeradi/blog   master±  git commit -m "Initial commit of the blog"
+✝  ~/takeradi/blog -- master± > git add .
+ ✝  ~/takeradi/blog -- master± > git commit -m "Initial commit of the blog"
 [master (root-commit) c17cc19] Initial commit of the blog
  10 files changed, 257 insertions(+)
  create mode 100644 .gitignore
@@ -146,8 +146,8 @@ If you notice carefully, you will see two things:
  create mode 100644 source/_posts/Git-Submodules.md
  create mode 100644 source/_posts/hello-world.md
  create mode 160000 themes/next
- ✝  ~/takeradi/blog   master  git remote add origin https://github.com/takeradi/takeradi-blog.git
- ✝  ~/takeradi/blog   master  git push -u origin master
+ ✝  ~/takeradi/blog -- master > git remote add origin https://github.com/takeradi/takeradi-blog.git
+ ✝  ~/takeradi/blog -- master > git push -u origin master
 Username for 'https://github.com': takeradi
 Password for 'https://takeradi@github.com':
 Counting objects: 15, done.
@@ -176,7 +176,7 @@ If you want to continue customizing the 3rd party library, you just have to foll
 2. Change directory to the main project and check git status. You will see something like this:
 
     ```
-    ✝  ~/takeradi/blog   master±  git status
+    ✝  ~/takeradi/blog -- master± > git status
     On branch master
     Your branch is up-to-date with 'origin/master'.
     Changes not staged for commit:

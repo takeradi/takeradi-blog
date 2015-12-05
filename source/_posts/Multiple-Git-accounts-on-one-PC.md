@@ -15,8 +15,8 @@ You could follow these steps:
 2. For your second account, override the global config by a local one everytime you create a repo. While this might be a bit longer (2 extra commands for god's sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the global config by a local one:
 
     ```
-    ✝  ~/takeradi/blog   master±  git config user.name takeradi
-    ✝  ~/takeradi/blog   master±  git config user.email sampleemail@sampleemail.com
+    ✝  ~/takeradi/blog -- master± > git config user.name takeradi
+    ✝  ~/takeradi/blog -- master± > git config user.email sampleemail@sampleemail.com
     ```
     _Note: The above steps should be performed inside the newly created repo before committing/pushing anything to your Git remote repo._
 
