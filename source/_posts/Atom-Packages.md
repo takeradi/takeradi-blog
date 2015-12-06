@@ -4,9 +4,9 @@ tags: ['Atom']
 categories: ['Text Editors']
 ---
 
-Did you know that [Atom](https://atom.io/) is one of the best text editors out there?
+There are a lot of text editors out there. Sublime Text, Atom, Brackets, Visual Studio Code. [Atom](https://atom.io/) is one of the best and it hands down my favorite!
 
-Atom is an open source, platform independent text editor built by GitHub. It has a great ecosystem of packages which extend the capabilities of Atom to a great extent. Packages are super simple to install using the in-built atom package manager - `apm`. And did I mention that its free? Yes, its free!
+Atom is an open source, platform independent text editor built by GitHub. It has an amazing ecosystem of packages which greatly extend the capabilities. Packages are super simple to install using the in-built atom package manager - `apm`. And did I mention that its free? Yes, its free!
 
 Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a pro:
 <!--more-->
@@ -39,7 +39,9 @@ This package resolves git merge conflicts through Atom. I wonder why GitHub didn
 A basic linter for your javascript files. There are many other linters available. Pick what you like the most.
 
 10. [Activate Power Mode](https://atom.io/packages/activate-power-mode):
-Sometimes, only activating power mode can save you. This package was made for trying times. Activate power mode and code your problems away! :D
+This is a fun one! Sometimes, only activating power mode can save you. This package was made for times like that. Activate power mode and code your problems away! :D
 
 
-Atom has lots of other useful plugins. Let me know which ones you like the most!
+Atom has lots of other useful packages. It sucks though that its integration with Git is not that great. Weird right? Made by GitHub :-/ Lets hope that they decide to solve that issue in their next update.
+
+Let me know which Atom packages you like the most!

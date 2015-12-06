@@ -164,11 +164,11 @@ If you look at the GitHub repository you will see the hash of the commit linking
 
 The above screenshot shows `32ca4fa` as the hash of the commit which is referenced in the forked repo. Clicking on it will take you to that commit.
 
-![Submodule hash link](/images/04122015/Git_Submodule_Hash.png)
+![Submodule hash link](/images/12042015/Git_Submodule_Hash.png)
 
 In fact, if you dig deeper, you will notice that the commit that was pushed from the main project was in fact the complete hash of the commit in the forked repo as shown below:
 
-![Complete hash of the forked repo](/images/04122015/Git_Hash_Link.png)
+![Complete hash of the forked repo](/images/12042015/Git_Hash_Link.png)
 <hr/>
 # Customizing the library further:<p/>
 If you want to continue customizing the 3rd party library, you just have to follow the same steps again:
@@ -191,7 +191,7 @@ If you want to continue customizing the 3rd party library, you just have to foll
 
     The `new commits` message now indicates that the submodule was updated. This updates the hash linking the submodule in your main project to point to the commit which is referenced on the forked module as shown below:
 
-    ![Git Hash Update](/images/04122015/Git_Hash_Update.png)
+    ![Git Hash Update](/images/12042015/Git_Hash_Update.png)
 
 3. Stage, commit and push these changes in the main project.
 
