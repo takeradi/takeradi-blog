@@ -11,7 +11,7 @@ There are a plethora of articles, tutorials and courses on Javascript and I am p
 Before I start, I want to mention that the I find the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) to be very useful in understanding most of the concepts. I am going to link the MDN documentation wherever possible to help you easily find additional information on the topics that I plan to cover.
 
 I am going to start this series off with [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) but to understand closure, one must have a good understanding of [Variable Scope](https://msdn.microsoft.com/en-us/library/bzt2dkta.aspx) in Javascript. The important thing to remember about Variable Scope is that Javascript DOES NOT have `block-level` scope. Javascript has `function-level` scope (Remembering this alone can save you from so much pain). As long as you understand that, this article should be quite easy to understand.
-
+<!--more-->
 # What the heck is a Closure?
 Imagine the following scenario - You have an inner function which tries to access the local variables of its outer function. If this inner function, which has access to the outer functions variables, is made accessible outside of the outer function, a closure is formed.
 
