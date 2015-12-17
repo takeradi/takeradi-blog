@@ -10,14 +10,14 @@ There are a plethora of articles, tutorials and courses on Javascript and I am p
 
 Before I start, I want to mention that the I find the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) to be very useful in understanding most of the concepts. I am going to link the MDN documentation wherever possible to help you easily find additional information on the topics that I plan to cover.
 
-I am going to start this series off with [Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) but to understand closure, one must have a good understanding of [Variable Scope](https://msdn.microsoft.com/en-us/library/bzt2dkta.aspx) in Javascript. The important thing to remember about Variable Scope is that Javascript DOES NOT have `block-level` scope. Javascript has `function-level` scope (Remembering this alone can save you from so much pain). As long as you understand that, this article should be quite easy to understand.
+I am going to start this series off with [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) but to understand closure, one must have a good understanding of [Variable Scope](https://msdn.microsoft.com/en-us/library/bzt2dkta.aspx) in Javascript. The important thing to remember about Variable Scope is that Javascript DOES NOT have `block-level` scope. Javascript has `function-level` scope (Remembering this alone can save you from so much pain). As long as you understand that, this article should be quite easy to understand.
 <!--more-->
-# What the heck is a Closure?
+# What the heck are Closure?
 Imagine the following scenario - You have an inner function which tries to access the local variables of its outer function. If this inner function, which has access to the outer functions variables, is made accessible outside of the outer function, a closure is formed.
 
 Confused yet? Let's try to grasp this concept with the help of an example.
 
-# Closure in Action
+# Closures in Action
 ```
 function incrementCounter(){
   var counter=0;
@@ -46,8 +46,8 @@ If you notice carefully, you will see 3 things over here:
 
 Hope that clears the main concept.
 
-# Practical Examples of Closure
-You will see many theoretical examples of Closure being thrown around to understand the concept of closure. But we all know that practically applying the concept contributes the most actually understanding it.
+# Practical Examples of Closures
+You will see many theoretical examples being thrown around to understand the concept of closures. But when do we actually use Closures?
 
 You will find this [Stackoverflow question](http://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript) to be very useful for this.
 
@@ -74,4 +74,4 @@ alert(person.getName()); // "Takeradi"
 
 This is actually the [Javascript Module Pattern](http://yuiblog.com/blog/2007/06/12/module-pattern/). In this example, you cannot access the variable `name` directly. The only way that it can be interacted with is the two functions `getName()` and `setName()`. You alone decide what IS and IS NOT accessible to everyone. Remember OOP anyone?
 
-And that's about it! I hope this article helps you understand what Javascript Closure is. As always, the MDN documentation that I have linked above is an amazing read.
+And that's about it! I hope this article helps you understand what Javascript Closures are. As always, the MDN documentation that I have linked above is an amazing read.
