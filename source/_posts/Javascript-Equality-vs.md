@@ -76,14 +76,17 @@ e === f           // true
 ```
 
 The special case is:
+
 ```
 var a = "abc"; // a String literal
-var b = new String("abc"); // an String object
+var b = new String("abc"); // a String object
 
 a == b            // true because after type conversion only the value is compared
 a === b           // false because of the identity comparison. a and b are not of the same type
 
 ```
+
+A String literal comparison with a String object comparison is a bit tricky. Hopefully the above examples helps you to handle such comparisons.
 
 # === DOES NOT mean "equal and of the same type"
 

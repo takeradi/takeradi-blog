@@ -4,9 +4,9 @@ tags: ['Atom']
 categories: ['Text Editors']
 ---
 
-There are a lot of text editors out there. Sublime Text, Atom, Brackets, Visual Studio Code. [Atom](https://atom.io/) is one of the best and it hands down my favorite!
+There are a lot of text editors out there. Sublime Text, Atom, Brackets, Visual Studio Code and so many more. [Atom](https://atom.io/) is one of the best and it hands down my favorite!
 
-Atom is an open source, platform independent text editor built by GitHub. It has an amazing ecosystem of packages which greatly extend the capabilities. Packages are super simple to install using the in-built atom package manager - `apm`. And did I mention that its free? Yes, its free!
+Atom is an open source, platform independent text editor built by GitHub. It has an amazing ecosystem of packages which greatly extend its capabilities. Packages are super simple to install using the in-built atom package manager - `apm`. And did I mention that its free? Yes, its free!
 
 Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a pro:
 <!--more-->
