@@ -4,31 +4,31 @@ tags: ['javascript','dev']
 categories: ['Javascript']
 ---
 
-# Test
+# Introduction
 
 Let's look at a few equality tests:
 ```
-console.log(true==1); //returns true
-console.log(1=="1"); //returns true
+console.log(true==1); // true
+console.log(1=="1"); // true
 
-console.log(true===1); //returns false
-console.log(1==="1"); //returns false
+console.log(true===1); // false
+console.log(1==="1"); // false
 
 var a = [1,2,3];
 var b = [1,2,3];
 var c = a;
 
-console.log(a==b); //returns false
-console.log(a==c); //returns true
+console.log(a==b); // false
+console.log(a==c); // true
 
 var d = new String("text");
 var e = "text";
 
-console.log(d==e); //returns true
-console.log(d===e); //returns false
+console.log(d==e); // true
+console.log(d===e); // false
 ```
 
-If you understand why the [equality comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) return what they return above, then turn around and never look back :D. If not, then hit then continue reading...
+If you understand why the [equality comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) return what they return above, then turn around and never look back :D. If not then continue reading...
 <!--more-->
 
 # What do `==` and `===` represent?
@@ -86,9 +86,9 @@ a === b           // false because of the identity comparison. a and b are not o
 
 ```
 
-A String literal comparison with a String object comparison is a bit tricky. Hopefully the above examples helps you to handle such comparisons.
+A String literal comparison with a String object comparison is a bit tricky. Hopefully the above example helps you to handle such comparisons.
 
-# === DOES NOT mean "equal and of the same type"
+# "===" DOES NOT mean "equal and of the same type"
 
 The identity operator `===` DOES NOT always mean `equal and of the same type`.
 
